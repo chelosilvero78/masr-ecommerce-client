@@ -8,15 +8,19 @@ import { Link } from "react-router-dom";
 import { createOrUpdateUser } from "../../functions/auth";
 
 const Login = ({ history }) => {
-  const [email, setEmail] = useState("gqlreactnode@gmail.com");
-  const [password, setPassword] = useState("gggggg");
+  const [email, setEmail] = useState("marcesilvero@gmail.com");
+  const [password, setPassword] = useState("123456");
   const [loading, setLoading] = useState(false);
 
   const { user } = useSelector((state) => ({ ...state }));
 
+  //creo que por cada cambio en prop--> user,history sacar al '/' si no esta loggeado el user
+  //si ya esta logeado el usuario, e intenta ir a --> '/login', será sacado y enviado al '/'
   useEffect(() => {
+    //intended (destinado a)
     let intended = history.location.state;
     if (intended) {
+      console.log("intended1-->",intended)
       return;
     } else {
       if (user && user.token) history.push("/");
@@ -29,6 +33,7 @@ const Login = ({ history }) => {
     // check if intended
     let intended = history.location.state;
     if (intended) {
+      console.log("intended-from-->",intended)
       history.push(intended.from);
     } else {
       if (res.data.role === "admin") {

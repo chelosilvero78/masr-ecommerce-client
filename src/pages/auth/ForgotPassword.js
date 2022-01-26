@@ -9,6 +9,7 @@ const ForgotPassword = ({ history }) => {
 
   const { user } = useSelector((state) => ({ ...state }));
 
+  //despues de cargar todo el componente, verificar si esta loggeado ir a '/'
   useEffect(() => {
     if (user && user.token) history.push("/");
   }, [user, history]);
@@ -22,12 +23,14 @@ const ForgotPassword = ({ history }) => {
       handleCodeInApp: true,
     };
 
+    //metodo de firebase para resetear el password
     await auth
       .sendPasswordResetEmail(email, config)
       .then(() => {
         setEmail("");
         setLoading(false);
-        toast.success("Check your email for password reset link");
+        // toast.success("Check your email for password reset link");
+        toast.success("verifique su email para restablecer su password");
       })
       .catch((error) => {
         setLoading(false);
