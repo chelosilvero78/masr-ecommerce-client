@@ -54,9 +54,9 @@ const AllProducts = () => {
 
         <div className="col">
           {loading ? (
-            <h4 className="text-danger">Loading...</h4>
+            <h4 className="text-danger">Cargando...</h4>
           ) : (
-            <h4>All Products</h4>
+            <h4>Todos los Productos</h4>
           )}
           <div className="row">
             {products.map((product) => (

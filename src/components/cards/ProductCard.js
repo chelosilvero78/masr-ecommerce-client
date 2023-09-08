@@ -57,7 +57,7 @@ const ProductCard = ({ product }) => {
       {product && product.ratings && product.ratings.length > 0 ? (
         showAverage(product)
       ) : (
-        <div className="text-center pt-1 pb-3">No rating yet</div>
+        <div className="text-center pt-1 pb-3">Sin calificación aún</div>
       )}
 
       <Card
@@ -70,12 +70,12 @@ const ProductCard = ({ product }) => {
         }
         actions={[
           <Link to={`/product/${slug}`}>
-            <EyeOutlined className="text-warning" /> <br /> View Product
+            <EyeOutlined className="text-warning" /> <br /> Ver Producto
           </Link>,
           <Tooltip title={tooltip}>
             <a onClick={handleAddToCart} disabled={product.quantity < 1}>
               <ShoppingCartOutlined className="text-danger" /> <br />
-              {product.quantity < 1 ? "Out of stock" : "Add to Cart"}
+              {product.quantity < 1 ? "Out of stock" : "Añadir a la cesta"}
             </a>
           </Tooltip>,
         ]}

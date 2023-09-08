@@ -109,9 +109,9 @@ const App = () => {
     <Suspense
       fallback={
         <div className="col text-center p-5">
-          __ React Redux EC
+          __ SHOP ECOMMERCE 
           <LoadingOutlined />
-          MMERCE __
+           MASR__
         </div>
       }
     >

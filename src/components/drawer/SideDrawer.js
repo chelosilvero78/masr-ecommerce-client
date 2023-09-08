@@ -60,7 +60,7 @@ const SideDrawer = () => {
           }
           className="text-center btn btn-primary btn-raised btn-block"
         >
-          Go To Cart
+          Ir al Carrito
         </button>
       </Link>
     </Drawer>

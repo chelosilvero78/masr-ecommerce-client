@@ -42,30 +42,30 @@ const Header = () => {
   return (
     <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
       <Item key="home" icon={<AppstoreOutlined />}>
-        <Link to="/">Home</Link>
+        <Link to="/">Inicio</Link>
       </Item>
 
       <Item key="shop" icon={<ShoppingOutlined />}>
-        <Link to="/shop">Shop</Link>
+        <Link to="/shop">Tienda</Link>
       </Item>
 
       <Item key="cart" icon={<ShoppingCartOutlined />}>
         <Link to="/cart">
           <Badge count={cart.length} offset={[9, 0]}>
-            Cart
+            Carrito
           </Badge>
         </Link>
       </Item>
 
       {!user && (
         <Item key="register" icon={<UserAddOutlined />} className="float-right">
-          <Link to="/register">Register</Link>
+          <Link to="/register">Registrar</Link>
         </Item>
       )}
 
       {!user && (
         <Item key="login" icon={<UserOutlined />} className="float-right">
-          <Link to="/login">Login</Link>
+          <Link to="/login">Ingresar</Link>
         </Item>
       )}
 
@@ -77,18 +77,18 @@ const Header = () => {
         >
           {user && user.role === "subscriber" && (
             <Item>
-              <Link to="/user/history">Dashboard</Link>
+              <Link to="/user/history">Tablero</Link>
             </Item>
           )}
 
           {user && user.role === "admin" && (
             <Item>
-              <Link to="/admin/dashboard">Dashboard</Link>
+              <Link to="/admin/dashboard">Tablero</Link>
             </Item>
           )}
 
           <Item icon={<LogoutOutlined />} onClick={logout}>
-            Logout
+            Salir
           </Item>
         </SubMenu>
       )}

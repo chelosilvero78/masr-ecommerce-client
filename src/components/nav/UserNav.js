@@ -6,19 +6,19 @@ const UserNav = () => (
     <ul className="nav flex-column">
       <li className="nav-item">
         <Link to="/user/history" className="nav-link">
-          History
+          Historial
         </Link>
       </li>
 
       <li className="nav-item">
         <Link to="/user/password" className="nav-link">
-          Password
+          Contraseña
         </Link>
       </li>
 
       <li className="nav-item">
         <Link to="/user/wishlist" className="nav-link">
-          Wishlist
+          Lista de Deseos
         </Link>
       </li>
     </ul>

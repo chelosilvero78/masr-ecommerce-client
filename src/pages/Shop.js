@@ -314,7 +314,7 @@ const Shop = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-3 pt-2">
-          <h4>Search/Filter</h4>
+          <h4> Buscar/Filtrar </h4>
           <hr />
 
           <Menu
@@ -326,7 +326,7 @@ const Shop = () => {
               key="1"
               title={
                 <span className="h6">
-                  <DollarOutlined /> Price
+                  <DollarOutlined /> Precio
                 </span>
               }
             >
@@ -347,7 +347,7 @@ const Shop = () => {
               key="2"
               title={
                 <span className="h6">
-                  <DownSquareOutlined /> Categories
+                  <DownSquareOutlined /> Categorias
                 </span>
               }
             >
@@ -359,7 +359,7 @@ const Shop = () => {
               key="3"
               title={
                 <span className="h6">
-                  <StarOutlined /> Rating
+                  <StarOutlined /> Clasificación
                 </span>
               }
             >
@@ -371,7 +371,7 @@ const Shop = () => {
               key="4"
               title={
                 <span className="h6">
-                  <DownSquareOutlined /> Sub Categories
+                  <DownSquareOutlined /> Sub categorías
                 </span>
               }
             >
@@ -385,7 +385,7 @@ const Shop = () => {
               key="5"
               title={
                 <span className="h6">
-                  <DownSquareOutlined /> Brands
+                  <DownSquareOutlined /> Marcas
                 </span>
               }
             >
@@ -399,7 +399,7 @@ const Shop = () => {
               key="6"
               title={
                 <span className="h6">
-                  <DownSquareOutlined /> Colors
+                  <DownSquareOutlined /> Colores
                 </span>
               }
             >
@@ -413,7 +413,7 @@ const Shop = () => {
               key="7"
               title={
                 <span className="h6">
-                  <DownSquareOutlined /> Shipping
+                  <DownSquareOutlined /> Envío
                 </span>
               }
             >
@@ -426,12 +426,12 @@ const Shop = () => {
 
         <div className="col-md-9 pt-2">
           {loading ? (
-            <h4 className="text-danger">Loading...</h4>
+            <h4 className="text-danger">Cargando...</h4>
           ) : (
-            <h4 className="text-danger">Products</h4>
+            <h4 className="text-danger">Productos</h4>
           )}
 
-          {products.length < 1 && <p>No products found</p>}
+          {products.length < 1 && <p>No se encontraron productos</p>}
 
           <div className="row pb-5">
             {products.map((p) => (

@@ -29,7 +29,7 @@ const SubHome = ({ match }) => {
             </h4>
           ) : (
             <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
-              {products.length} Products in "{sub.name}" sub category
+              {products.length} Productos en "{sub.name}" sub categoría
             </h4>
           )}
         </div>

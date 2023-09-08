@@ -64,14 +64,14 @@ const CreateCouponPage = () => {
         </div>
         <div className="col-md-10">
           {loading ? (
-            <h4 className="text-danger">Loading...</h4>
+            <h4 className="text-danger">Cargando...</h4>
           ) : (
             <h4>Coupon</h4>
           )}
 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label className="text-muted">Name</label>
+              <label className="text-muted">Nombre</label>
               <input
                 type="text"
                 className="form-control"
@@ -83,7 +83,7 @@ const CreateCouponPage = () => {
             </div>
 
             <div className="form-group">
-              <label className="text-muted">Discount %</label>
+              <label className="text-muted">Descuento %</label>
               <input
                 type="text"
                 className="form-control"
@@ -94,7 +94,7 @@ const CreateCouponPage = () => {
             </div>
 
             <div className="form-group">
-              <label className="text-muted">Expiry</label>
+              <label className="text-muted">Expiración</label>
               <br />
               <DatePicker
                 className="form-control"
@@ -115,10 +115,10 @@ const CreateCouponPage = () => {
           <table className="table table-bordered">
             <thead className="thead-light">
               <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Expiry</th>
-                <th scope="col">Discount</th>
-                <th scope="col">Action</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Expiración</th>
+                <th scope="col">Descuento</th>
+                <th scope="col">Acción</th>
               </tr>
             </thead>
 

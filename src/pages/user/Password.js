@@ -28,12 +28,12 @@ const Password = () => {
   const passwordUpdateForm = () => (
     <form onSubmit={handleSubmit}>
       <div className="form-group">
-        <label>Your Password</label>
+        <label>Tu Contraseña</label>
         <input
           type="password"
           onChange={(e) => setPassword(e.target.value)}
           className="form-control"
-          placeholder="Enter new password"
+          placeholder="Ingresa nueva contraseña"
           disabled={loading}
           value={password}
         />
@@ -41,7 +41,7 @@ const Password = () => {
           className="btn btn-primary"
           disabled={!password || password.length < 6 || loading}
         >
-          Submit
+          Enviar
         </button>
       </div>
     </form>
@@ -55,9 +55,9 @@ const Password = () => {
         </div>
         <div className="col">
           {loading ? (
-            <h4 className="text-danger">Loading..</h4>
+            <h4 className="text-danger">Cargando..</h4>
           ) : (
-            <h4>Password Update</h4>
+            <h4>Actualizar Contraseña</h4>
           )}
           {passwordUpdateForm()}
         </div>

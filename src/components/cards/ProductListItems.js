@@ -36,7 +36,7 @@ const ProductListItems = ({ product }) => {
 
       {subs && (
         <li className="list-group-item">
-          Sub Categories
+          Sub Categorias
           {subs.map((s) => (
             <Link
               key={s._id}

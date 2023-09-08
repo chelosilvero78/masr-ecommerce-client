@@ -84,11 +84,11 @@ const SingleProduct = ({ product, onStarClick, star }) => {
         )}
 
         <Tabs type="card">
-          <TabPane tab="Description" key="1">
+          <TabPane tab="Descripción" key="1">
             {description && description}
           </TabPane>
-          <TabPane tab="More" key="2">
-            Call use on xxxx xxx xxx to learn more about this product.
+          <TabPane tab="Más" key="2">
+            Para mayores detalles contacte al (xxxx) xxx xxx para obtener más información sobre este producto.
           </TabPane>
         </Tabs>
       </div>
@@ -99,7 +99,7 @@ const SingleProduct = ({ product, onStarClick, star }) => {
         {product && product.ratings && product.ratings.length > 0 ? (
           showAverage(product)
         ) : (
-          <div className="text-center pt-1 pb-3">No rating yet</div>
+          <div className="text-center pt-1 pb-3">Sin calificar aún</div>
         )}
 
         <Card
@@ -108,11 +108,11 @@ const SingleProduct = ({ product, onStarClick, star }) => {
               <a onClick={handleAddToCart} disabled={product.quantity < 1}>
                 <ShoppingCartOutlined className="text-danger" />
                 <br />
-                {product.quantity < 1 ? "Out of Stock" : "Add To Cart"}
+                {product.quantity < 1 ? "Agotado" : "Añadir a Carrito"}
               </a>
             </Tooltip>,
             <a onClick={handleAddToWishlist}>
-              <HeartOutlined className="text-info" /> <br /> Add to Wishlist
+              <HeartOutlined className="text-info" /> <br /> Añadir a lista de deseos
             </a>,
             <RatingModal>
               <StarRating

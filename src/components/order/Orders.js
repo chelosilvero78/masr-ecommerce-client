@@ -7,12 +7,12 @@ const Orders = ({ orders, handleStatusChange }) => {
     <table className="table table-bordered">
       <thead className="thead-light">
         <tr>
-          <th scope="col">Title</th>
-          <th scope="col">Price</th>
-          <th scope="col">Brand</th>
+          <th scope="col">Título</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Marca</th>
           <th scope="col">Color</th>
-          <th scope="col">Count</th>
-          <th scope="col">Shipping</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Envío</th>
         </tr>
       </thead>
 
@@ -57,12 +57,12 @@ const Orders = ({ orders, handleStatusChange }) => {
                   defaultValue={order.orderStatus}
                   name="status"
                 >
-                  <option value="Not Processed">Not Processed</option>
-                  <option value="Cash On Delivery">Cash On Delivery</option>
-                  <option value="Processing">Processing</option>
-                  <option value="Dispatched">Dispatched</option>
-                  <option value="Cancelled">Cancelled</option>
-                  <option value="Completed">Completed</option>
+                  <option value="Not Processed">No procesado</option>
+                  <option value="Cash On Delivery">Pagar al recibir</option>
+                  <option value="Processing">Procesando</option>
+                  <option value="Dispatched">Enviado</option>
+                  <option value="Cancelled">Cancelado</option>
+                  <option value="Completed">Terminado</option>
                 </select>
               </div>
             </div>

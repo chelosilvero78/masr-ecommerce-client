@@ -27,15 +27,15 @@ const RatingModal = ({ children }) => {
     <>
       <div onClick={handleModal}>
         <StarOutlined className="text-danger" /> <br />{" "}
-        {user ? "Leave rating" : "Login to leave rating"}
+        {user ? "Deja una Calificación" : "Inicia sesión para  poder calificar"}
       </div>
       <Modal
-        title="Leave your rating"
+        title="Deja una Calificación"
         centered
         visible={modalVisible}
         onOk={() => {
           setModalVisible(false);
-          toast.success("Thanks for your review. It will apper soon");
+          toast.success("Gracias por aportar tu reseña. Aparecerá pronto");
         }}
         onCancel={() => setModalVisible(false)}
       >

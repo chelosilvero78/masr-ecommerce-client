@@ -118,7 +118,7 @@ const Checkout = ({ history }) => {
         className="form-control"
       />
       <button onClick={applyDiscountCoupon} className="btn btn-primary mt-2">
-        Apply
+        Aplicar
       </button>
     </>
   );
@@ -158,7 +158,7 @@ const Checkout = ({ history }) => {
   return (
     <div className="row">
       <div className="col-md-6">
-        <h4>Delivery Address</h4>
+        <h4>Dirección de Envío</h4>
         <br />
         <br />
         {showAddress()}
@@ -171,17 +171,17 @@ const Checkout = ({ history }) => {
       </div>
 
       <div className="col-md-6">
-        <h4>Order Summary</h4>
+        <h4>Resumen de Pedido</h4>
         <hr />
-        <p>Products {products.length}</p>
+        <p>Productos {products.length}</p>
         <hr />
         {showProductSummary()}
         <hr />
-        <p>Cart Total: {total}</p>
+        <p>Total Carrito: {total}</p>
 
         {totalAfterDiscount > 0 && (
           <p className="bg-success p-2">
-            Discount Applied: Total Payable: ${totalAfterDiscount}
+            Descuento aplicado y Total a pagar: ${totalAfterDiscount}
           </p>
         )}
 
@@ -193,7 +193,7 @@ const Checkout = ({ history }) => {
                 disabled={!addressSaved || !products.length}
                 onClick={createCashOrder}
               >
-                Place Order
+                Realizar pedido
               </button>
             ) : (
               <button
@@ -201,7 +201,7 @@ const Checkout = ({ history }) => {
                 disabled={!addressSaved || !products.length}
                 onClick={() => history.push("/payment")}
               >
-                Place Order
+                Realizar pedido
               </button>
             )}
           </div>
@@ -212,7 +212,7 @@ const Checkout = ({ history }) => {
               onClick={emptyCart}
               className="btn btn-primary"
             >
-              Empty Cart
+              Vaciar Carrito
             </button>
           </div>
         </div>

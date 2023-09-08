@@ -45,9 +45,9 @@ const CategoryUpdate = ({ history, match }) => {
         </div>
         <div className="col">
           {loading ? (
-            <h4 className="text-danger">Loading..</h4>
+            <h4 className="text-danger">Cargando..</h4>
           ) : (
-            <h4>Update category</h4>
+            <h4>Actualizar Categoría</h4>
           )}
 
           <CategoryForm

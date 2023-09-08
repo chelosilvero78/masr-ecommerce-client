@@ -67,7 +67,7 @@ const ProductUpdateForm = ({
       </div>
 
       <div className="form-group">
-        <label>Shipping</label>
+        <label>Envío</label>
         <select
           value={shipping === "Yes" ? "Yes" : "No"}
           name="shipping"
@@ -75,12 +75,12 @@ const ProductUpdateForm = ({
           onChange={handleChange}
         >
           <option value="No">No</option>
-          <option value="Yes">Yes</option>
+          <option value="Yes">Si</option>
         </select>
       </div>
 
       <div className="form-group">
-        <label>Quantity</label>
+        <label>Cantidad</label>
         <input
           type="number"
           name="quantity"
@@ -107,7 +107,7 @@ const ProductUpdateForm = ({
       </div>
 
       <div className="form-group">
-        <label>Brand</label>
+        <label>Marca</label>
         <select
           value={brand}
           name="brand"
@@ -123,7 +123,7 @@ const ProductUpdateForm = ({
       </div>
 
       <div className="form-group">
-        <label>Category</label>
+        <label>Categoría</label>
         <select
           name="category"
           className="form-control"
@@ -140,7 +140,7 @@ const ProductUpdateForm = ({
       </div>
 
       <div>
-        <label>Sub Categories</label>
+        <label>Sub Categorias</label>
         <Select
           mode="multiple"
           style={{ width: "100%" }}
@@ -158,7 +158,7 @@ const ProductUpdateForm = ({
       </div>
 
       <br />
-      <button className="btn btn-outline-info">Save</button>
+      <button className="btn btn-outline-info">Guardar</button>
     </form>
   );
 };

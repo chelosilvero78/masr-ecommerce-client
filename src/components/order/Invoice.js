@@ -14,16 +14,16 @@ const Invoice = ({ order }) => (
       <Text style={styles.header} fixed>
         ~ {new Date().toLocaleString()} ~
       </Text>
-      <Text style={styles.title}>Order Invoice</Text>
+      <Text style={styles.title}>Factura de pedido</Text>
       <Text style={styles.author}>React Redux Ecommerce</Text>
-      <Text style={styles.subtitle}>Order Summary</Text>
+      <Text style={styles.subtitle}>Resumen del Pedido</Text>
 
       <Table>
         <TableHeader>
-          <TableCell>Title</TableCell>
-          <TableCell>Price</TableCell>
-          <TableCell>Quantity</TableCell>
-          <TableCell>Brand</TableCell>
+          <TableCell>Título</TableCell>
+          <TableCell>Precio</TableCell>
+          <TableCell>Cantidad</TableCell>
+          <TableCell>Marca</TableCell>
           <TableCell>Color</TableCell>
         </TableHeader>
       </Table>
@@ -50,17 +50,17 @@ const Invoice = ({ order }) => (
         </Text>
         {"\n"}
         <Text>
-          Order Status: {"  "}
+          Estado del Pedido: {"  "}
           {order.orderStatus}
         </Text>
         {"\n"}
         <Text>
-          Total Paid: {"       "}
+          Total Pagado: {"       "}
           {order.paymentIntent.amount}
         </Text>
       </Text>
 
-      <Text style={styles.footer}> ~ Thank you for shopping with us ~ </Text>
+      <Text style={styles.footer}> ~ Gracias por comprar de nosotros ~ </Text>
     </Page>
   </Document>
 );

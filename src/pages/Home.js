@@ -10,11 +10,11 @@ const Home = () => {
     <>
       <div className="jumbotron text-danger h1 font-weight-bold text-center">
         {/* <Jumbotron text={["Latest Products", "New Arrivals", "Best Sellers"]} /> */}
-        <Jumbotron text={["Ultimos Productos", "Novedades", "Superventas"]} />
+        <Jumbotron text={["Productos estrenados", "Novedades", "Superventas"]} />
       </div>
 
       <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
-        {/* New Arrivals */}Ultimos Productos
+        {/* New Arrivals */}Productos Novedosos
       </h4>
       <NewArrivals />
 
